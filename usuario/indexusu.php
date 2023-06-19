@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <h2>Formulario de cargo</h2>
+    <h2>Formulario de carg</h2>
   
     <form method="post">
 
