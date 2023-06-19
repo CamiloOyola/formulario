@@ -2,6 +2,7 @@
 require "../connection.php"; 
 
 if(isset($_POST['enviar'])){
+    
     $sueldo = trim($_POST['sueldo']); 
 
     $name = trim($_POST['nombrecargo']); 
