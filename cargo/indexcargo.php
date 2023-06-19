@@ -1,7 +1,7 @@
 <?php 
 require "../connection.php"; 
 
-if(isset($_POST['enviar'])){
+function procesarformulario($Conexion){
 
     $sueldo = trim($_POST['sueldo']); 
 
@@ -11,7 +11,7 @@ if(isset($_POST['enviar'])){
     $consulta = " INSERT INTO cargos(carNombre, carSueldo) 
     VALUES ('$name' , '$sueldo')"; 
 
-    $resultado = mysqli_query($objConexion,$consulta); 
+    $resultado = mysqli_query($Conexion,$consulta); 
 
     if($resultado){
 
@@ -25,10 +25,22 @@ if(isset($_POST['enviar'])){
     }
     else{
 
-        echo "<h3>Ha ocurrido un error: " . mysqli_error($objConexion) . "</h3>";
+        echo "<h3>Ha ocurrido un error: " . mysqli_error($Conexion) . "</h3>";
 
 
     }
 
 }
+
+
+
+
+if(isset($_POST['enviar'])){
+
+    procesarformulario($objConexion);
+
+
+}
+
+
 ?>

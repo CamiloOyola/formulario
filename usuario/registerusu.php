@@ -4,7 +4,7 @@
 
 if(isset($_POST['enviar'])){
 
-
+    
     $usu = trim($_POST['cargo']); 
 
     $contra = trim($_POST['contrasena']); 
