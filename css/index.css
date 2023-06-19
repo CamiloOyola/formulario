@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .form1{
+
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"], 
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .center button {
+    margin-top: 10px;
+  }
+
+  .botonvolver{
+    background-color: #d11717;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+
+  }  
+
+  .botonlistar{
+    background-color: #c8637c;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+  } 
+
+  .botoncargo{
+    background-color: #c24040;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+
+  }  
+
+  .botonusuario{
+    background-color: #3c73ad;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+
+  }  
+
+  .btneliminar{
+
+    color:red ; 
+
+  }
+  .botonvolver1{
+
+    background-color: #d11717;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-right: 1030px;
+
+  }
+
+  .botonempleado{
+    background-color: #26a5c5;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+
+  }  
+
+  input[type="submit"]{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .success-bar {
+  display: none;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
