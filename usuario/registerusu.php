@@ -9,7 +9,7 @@ if(isset($_POST['enviar'])){
 
     $contra = trim($_POST['contrasena']); 
 
-    $resultado = procesarFormulario($usu, $contra , $objConexion);
+   // $resultado = procesarFormulario($usu, $contra , $objConexion);
 
 
 
