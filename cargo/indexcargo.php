@@ -1,8 +1,7 @@
 <?php 
 require "../connection.php"; 
 
-function procesarformulario($Conexion){
-
+if(isset($_POST['enviar'])){
     $sueldo = trim($_POST['sueldo']); 
 
     $name = trim($_POST['nombrecargo']); 
@@ -11,7 +10,7 @@ function procesarformulario($Conexion){
     $consulta = " INSERT INTO cargos(carNombre, carSueldo) 
     VALUES ('$name' , '$sueldo')"; 
 
-    $resultado = mysqli_query($Conexion,$consulta); 
+    $resultado = mysqli_query($objConexion,$consulta); 
 
     if($resultado){
 
@@ -29,15 +28,7 @@ function procesarformulario($Conexion){
 
 
     }
-
-}
-
-
-
-
-if(isset($_POST['enviar'])){
-
-    procesarformulario($objConexion);
+    
 
 
 }
