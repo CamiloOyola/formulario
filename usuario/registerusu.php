@@ -2,6 +2,14 @@
 
 //include("../connection.php"); 
 
+function procesarFormulario($usu, $contra, $Conexion) {
+
+    $consulta = "INSERT INTO usuario(usuLogin, usuPassword) VALUES ('$usu', '$contra')";
+    $resultado = mysqli_query($Conexion, $consulta);
+
+    return $resultado;
+}
+
 if(isset($_POST['enviar'])){
 
 
@@ -9,16 +17,7 @@ if(isset($_POST['enviar'])){
 
     $contra = trim($_POST['contrasena']); 
 
-   // $resultado = procesarFormulario($usu, $contra , $objConexion);
-
-
-
-    $consulta = "INSERT INTO usuario(usuLogin, usuPassword)VALUES('$usu' , '$contra')"; 
-
-
-
-    $resultado = mysqli_query($objConexion,$consulta); 
-
+    $resultado = procesarFormulario($usu, $contra , $objConexion);
 
     if($resultado){
 
